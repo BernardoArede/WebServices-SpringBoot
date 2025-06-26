@@ -1,4 +1,4 @@
-package pt.ba.Web.Services.services;
+package pt.ba.web.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import pt.ba.Web.Services.entities.User;
-import pt.ba.Web.Services.repositories.UserRepository;
+import pt.ba.web.entities.User;
+import pt.ba.web.repositories.UserRepository;
 
 @Service
 public class UserService {
@@ -23,6 +23,4 @@ public class UserService {
         Optional<User> obj = repository.findById(id);
         return obj.get();
     }
-
-    
 }

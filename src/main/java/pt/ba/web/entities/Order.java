@@ -1,4 +1,4 @@
-package pt.ba.Web.Services.entities;
+package pt.ba.web.entities;
 
 import java.io.Serializable;
 import java.time.Instant;

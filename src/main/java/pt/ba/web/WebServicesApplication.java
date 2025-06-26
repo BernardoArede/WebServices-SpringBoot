@@ -1,4 +1,4 @@
-package pt.ba.Web.Services;
+package pt.ba.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
