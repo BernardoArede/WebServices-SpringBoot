@@ -11,7 +11,6 @@ import pt.ba.web.repositories.OrderRepository;
 
 @Service
 public class OrderService {
-
     @Autowired
     private OrderRepository orderRepository;
 

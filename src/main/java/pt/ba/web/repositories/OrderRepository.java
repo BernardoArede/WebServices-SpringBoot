@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import pt.ba.web.entities.Order;
 
-@Repository
+@Repository //Também podemos tirar este daqui tal como no UserRepository
 public interface OrderRepository extends JpaRepository <Order,Long> {
 
     
