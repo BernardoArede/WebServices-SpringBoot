@@ -30,4 +30,13 @@ public class OrderResources {
         return ResponseEntity.ok().body(obj);
    }
 
+   @GetMapping("/delete/{id}")
+    public ResponseEntity<Order> deleteById(@PathVariable Long id){
+        Order obj =  service.findById(id);
+        service.deleteById(id);
+        return ResponseEntity.ok().body(obj);
+   }
+
+
+
 }

@@ -3,6 +3,7 @@ package pt.ba.web.config;
 import java.time.Instant;
 import java.util.Arrays;
 
+import org.aspectj.lang.annotation.RequiredTypes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
