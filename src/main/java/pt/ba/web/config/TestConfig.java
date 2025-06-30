@@ -3,32 +3,31 @@ package pt.ba.web.config;
 import java.time.Instant;
 import java.util.Arrays;
 
-import org.aspectj.lang.annotation.RequiredTypes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 import pt.ba.web.entities.Category;
-import pt.ba.web.repositories.CategoryRepository;
+import pt.ba.web.repositories.ICategoryRepository;
 import pt.ba.web.status.OrderStatus;
 import pt.ba.web.entities.User;
 import pt.ba.web.entities.Order;
-import pt.ba.web.repositories.OrderRepository;
-import pt.ba.web.repositories.UserRepository;
+import pt.ba.web.repositories.IOrderRepository;
+import pt.ba.web.repositories.IUserRepository;
 
 @Configuration
 @Profile("test")
 public class TestConfig implements CommandLineRunner {
 
     @Autowired
-    private UserRepository userRepository;
+    private IUserRepository userRepository;
 
     @Autowired
-    private OrderRepository orderRepository;
+    private IOrderRepository orderRepository;
 
     @Autowired
-    private CategoryRepository categoryRepository;
+    private ICategoryRepository categoryRepository;
 
 
     @Override

@@ -7,13 +7,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import pt.ba.web.entities.User;
-import pt.ba.web.repositories.UserRepository;
+import pt.ba.web.repositories.IUserRepository;
 
 @Service
 public class UserService {
 
     @Autowired
-    private UserRepository repository;
+    private IUserRepository repository;
     
     public List<User> findAll(){
         return repository.findAll();

@@ -7,10 +7,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pt.ba.web.entities.Category;
-import pt.ba.web.repositories.CategoryRepository;
 import pt.ba.web.services.CategoryService;
 
-import java.util.Arrays;
 import java.util.List;
 
 @RestController
